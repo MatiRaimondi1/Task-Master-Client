@@ -1,8 +1,9 @@
 # 💻 TaskMaster Pro - Frontend Client
 
 ## 🌐 Live Demo & Backend
-* **Live Application:** [🚀 View Live Demo](https://your-frontend-link.vercel.app) *(Placeholder)*
-* **Backend API Repository:** [⚙️ TaskMaster Pro Backend](https://github.com/your-username/taskmaster-backend) *(Placeholder)*
+* **Live Application:** [🚀 View Live Demo](https://tm-private.vercel.app)
+  (If the site doesn't load wait until te server starts again, this is a free host after all.)
+* **Backend API Repository:** [⚙️ TaskMaster Pro Backend](https://github.com/MatiRaimondi1/Task-Master-Server)
 
 ---
 
@@ -60,7 +61,7 @@ A custom 6-digit input interface designed to handle code entry after registratio
 To connect this frontend with the API, create a `.env` file in the root directory:
 
 ```env
-VITE_API_URL=[https://your-backend-on-render.com/api](https://your-backend-on-render.com/api)
+VITE_API_URL=https://your-backend.com/api
 
 ```
 
@@ -70,8 +71,8 @@ VITE_API_URL=[https://your-backend-on-render.com/api](https://your-backend-on-re
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/your-username/taskmaster-frontend.git](https://github.com/your-username/taskmaster-frontend.git)
-cd taskmaster-frontend
+git clone https://github.com/MatiRaimondi1/Task-Master-Client
+cd task-master-client
 
 ```
 
