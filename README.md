@@ -9,7 +9,7 @@
 
 ## 📸 Screenshot
 
-[Tasks Management Screenshot](repo/website-screenshot.png)
+![Tasks Management Screenshot](repo/website-screenshot.png)
 
 ---
 
