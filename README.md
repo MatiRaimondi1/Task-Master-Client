@@ -7,6 +7,12 @@
 
 ---
 
+## 📸 Screenshot
+
+[Tasks Management Screenshot](repo/website-screenshot.png)
+
+---
+
 ## 🎨 UI/UX Features
 
 * **Dynamic Auth Flow:** Conditional rendering for Login, Registration, and a specialized **Email Verification UI**.
