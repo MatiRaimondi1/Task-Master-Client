@@ -71,7 +71,7 @@ VITE_API_URL=https://your-backend.com/api
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/MatiRaimondi1/Task-Master-Client
+git clone https://github.com/MatiRaimondi1/Task-Master-Client.git
 cd task-master-client
 
 ```
