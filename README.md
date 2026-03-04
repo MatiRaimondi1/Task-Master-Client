@@ -1,19 +1,19 @@
-# 💻 TaskMaster Pro - Frontend Client
+# TaskMaster Pro - Frontend Client
 
-## 🌐 Live Demo & Backend
-* **Live Application:** [🚀 View Live Demo](https://tm-private.vercel.app)
+## Live Demo & Backend
+* **Live Application:** [View Live Demo](https://tm-private.vercel.app)
   (If the site doesn't load wait until the server starts again, this is a free host after all.)
-* **Backend API Repository:** [⚙️ TaskMaster Pro Backend](https://github.com/MatiRaimondi1/Task-Master-Server)
+* **Backend API Repository:** [TaskMaster Pro Backend](https://github.com/MatiRaimondi1/Task-Master-Server)
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 
 ![Tasks Management Screenshot](repo/website-screenshot.png)
 
 ---
 
-## 🎨 UI/UX Features
+## UI/UX Features
 
 * **Dynamic Auth Flow:** Conditional rendering for Login, Registration, and a specialized **Email Verification UI**.
 * **Smart Dashboard:** Real-time task filtering, priority tagging, and progress tracking.
@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Framework:** React 18 (Vite)
 * **Styling:** Tailwind CSS
@@ -36,7 +36,7 @@
 
 ---
 
-## 🏗️ Architecture Highlights
+## Architecture
 
 ### Context API & Global State
 The app uses a dual-context architecture to maintain a clean separation of concerns:
@@ -51,7 +51,7 @@ A custom 6-digit input interface designed to handle code entry after registratio
 
 ---
 
-## 📡 Frontend Endpoints (Routes)
+## Frontend Endpoints (Routes)
 
 | Route | Access | Description |
 | :--- | :--- | :--- |
@@ -62,7 +62,7 @@ A custom 6-digit input interface designed to handle code entry after registratio
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 To connect this frontend with the API, create a `.env` file in the root directory:
 
@@ -73,7 +73,7 @@ VITE_API_URL=https://your-backend.com/api
 
 ---
 
-## 🚀 Local Setup
+## Local Setup
 
 1. **Clone the repository:**
 ```bash
@@ -104,11 +104,3 @@ npm run dev
 npm run build
 
 ```
-
-
-
----
-
-## 📝 Author
-
-Developed by **Matias Raimondi** as part of a Fullstack Portfolio Project.
