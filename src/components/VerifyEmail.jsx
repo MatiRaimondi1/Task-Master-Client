@@ -2,10 +2,22 @@ import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { Loader2, ShieldCheck } from 'lucide-react';
 
+/**
+ * Component for verifying user email
+ * @param {*} param0 
+ * @returns 
+ */
 export default function VerifyEmail({ email, onVerifySuccess }) {
+    /**
+     * State for the verification code and loading status
+     */
     const [code, setCode] = useState('');
     const [loading, setLoading] = useState(false);
 
+    /**
+     * Handle email verification
+     * @param {*} e 
+     */
     const handleVerify = async (e) => {
         e.preventDefault();
         setLoading(true);

@@ -1,14 +1,26 @@
 import { createContext, useState, useEffect } from 'react';
-import api from '../api/axios';
 import { toast } from 'react-hot-toast';
+import api from '../api/axios';
 
 export const TaskContext = createContext();
 
+/**
+ * TaskProvider component to manage task state
+ * @param {*} param0 
+ * @returns 
+ */
 export const TaskProvider = ({ children }) => {
+    /**
+     * State for the tasks, loading status, and editing task
+     */
     const [tasks, setTasks] = useState([]);
     const [loading, setLoading] = useState(true);
     const [editingTask, setEditingTask] = useState(null);
 
+    /**
+     * Get authentication headers for API requests
+     * @returns 
+     */
     const getAuthHeaders = () => {
         const token = localStorage.getItem('token');
         return {
@@ -18,6 +30,9 @@ export const TaskProvider = ({ children }) => {
         };
     };
 
+    /**
+     * Fetch all tasks from the API
+     */
     const fetchTasks = async () => {
         try {
             setLoading(true);
@@ -30,6 +45,10 @@ export const TaskProvider = ({ children }) => {
         }
     }
 
+    /**
+     * Add a new task
+     * @param {*} taskObject 
+     */
     const addTask = async (taskObject) => {
         try {
             const res = await api.post('/tasks', taskObject, getAuthHeaders());
@@ -40,6 +59,11 @@ export const TaskProvider = ({ children }) => {
         }
     }
 
+    /**
+     * Update a task
+     * @param {*} id 
+     * @param {*} updatedTask 
+     */
     const updateTask = async (id, updatedTask) => {
         try {
             const res = await api.put(`/tasks/${id}`, updatedTask, getAuthHeaders());
@@ -51,6 +75,10 @@ export const TaskProvider = ({ children }) => {
         }
     }
 
+    /**
+     * Delete a task
+     * @param {*} id 
+     */
     const deleteTask = async (id) => {
         try {
             await api.delete(`/tasks/${id}`, getAuthHeaders());
@@ -61,6 +89,11 @@ export const TaskProvider = ({ children }) => {
         }
     };
 
+    /**
+     * Update the status of a task
+     * @param {*} id 
+     * @param {*} nextStatus 
+     */
     const updateTaskStatus = async (id, nextStatus) => {
         try {
             const res = await api.put(
@@ -74,6 +107,9 @@ export const TaskProvider = ({ children }) => {
         }
     };
 
+    /**
+     * Initialize task state
+     */
     useEffect(() => {
         if (localStorage.getItem('token')) {
             fetchTasks();
