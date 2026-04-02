@@ -1,7 +1,9 @@
 # TaskMaster Pro - Frontend Client
 
+---
+
 ## Live Demo & Backend
-* **Live Application:** [View Live Demo](https://tm-private.vercel.app)
+* **Live Application:** [View Live Demo](https://task-master-client-sigma.vercel.app/)
   (If the site doesn't load wait until the server starts again, this is a free host after all.)
 * **Backend API Repository:** [TaskMaster Pro Backend](https://github.com/MatiRaimondi1/Task-Master-Server)
 
@@ -20,6 +22,7 @@
 * **Responsive Design:** Fully optimized for Mobile, Tablet, and Desktop using Tailwind CSS.
 * **Modern Feedback:** Integrated toast notifications for every user action (success, errors, loading states).
 * **Glassmorphism UI:** Clean aesthetic using backdrop blurs, slate-based color palettes, and Lucide icons.
+* **Darkmode Support:** Switch to dark mode for a more comfortable viewing experience.
 
 ---
 
@@ -42,6 +45,7 @@
 The app uses a dual-context architecture to maintain a clean separation of concerns:
 * **AuthContext:** Manages user session, JWT persistence in LocalStorage, and the multi-step verification flow.
 * **TaskContext:** Handles real-time CRUD operations, ensuring the UI stays in sync with the Backend API.
+* **ThemeContext:** Manages theme state for dark mode preference.
 
 ### Protected Routing
 Implemented custom route guards to prevent unauthenticated users from accessing the Dashboard, redirecting them automatically to the Landing or Login pages.
